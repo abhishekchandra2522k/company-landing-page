@@ -3,79 +3,245 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
         <link rel="icon" href="assets/img/logo.PNG">
+        <!--========== CSS ==========-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <!-- Box Icons -->
-        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
         <title>Unsocials</title>
     </head>
     <body>
-        <!-- OVERLAY -->
-        <div class="overlay first"></div>
-        <div class="overlay second"></div>
-        <div class="overlay third"></div>
 
-        <!-- Scroll Top -->
-        <a href="#" class="scrolltop show-scroll" id="scroll-top">
-            <i class='bx bxs-chevron-up scrolltop__icon'></i>
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
         </a>
-        <!-- HEADER -->
+
+        <!--========== HEADER ==========-->
         <header class="l-header" id="header">
             <nav class="nav bd-container">
-                <div>
-                    <a href="#" class="nav__logo">Unsocials</a>
-                </div>
+                <a href="#" class="nav__logo">Unsocials</a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-                        <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a href="#menu" class="nav__link">Blog</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
+
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
                     </ul>
                 </div>
 
                 <div class="nav__toggle" id="nav-toggle">
-                    <ion-icon name="menu"></ion-icon>
+                    <i class='bx bx-menu'></i>
                 </div>
             </nav>
         </header>
 
-        <!-- MAIN -->
-        <main class="l-main bd-grid">
-            <div class="home">
-                <div class="home__information">
-                    <span class="home__pressent anime-text">Hello, My name is</span>
-                    <h1 class="home__title anime-text">Rohan</h1>
-                    <span class="home__skill anime-text">Fashion Blogger</span>
+        <main class="l-main">
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__data">
+                        <h1 class="home__title">Unsocials</h1>
+                        <h2 class="home__subtitle">Digital Creativity <br> at its best.</h2>
+                        <a href="#" class="button">Explore</a>
+                    </div>
+    
+                    <img src="assets/img/logo png.PNG" alt="" class="home__img">
+                </div>
+            </section>
+            
+            <!--========== ABOUT ==========-->
+            <section class="about section bd-container" id="about">
+                <div class="about__container  bd-grid">
+                    <div class="about__data">
+                        <span class="section-subtitle about__initial">About us</span>
+                        <h2 class="section-title about__initial">We cook the best <br> digital reputation.</h2>
+                        <p class="about__description">We help companies build amazing products.</p>
+                        <a href="#" class="button">Explore history</a>
+                    </div>
+
+                    <img src="assets/img/about.jpg" alt="" class="about__img">
+                </div>
+            </section>
+
+            <!--========== SERVICES ==========-->
+            <section class="services section bd-container" id="services">
+                <span class="section-subtitle">Offering</span>
+                <h2 class="section-title">Our amazing services</h2>
+
+                <div class="services__container  bd-grid">
+                    <div class="services__content">
+                        <img src="assets/img/9.jpeg" class="services__img"/>
+                        <h3 class="services__title">Social Media Marketing</h3>
+                        <p class="services__description">We offer our clients excellent quality services for many years, best in the city.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <img src="assets/img/8.jpeg" class="services__img"/>
+                        <h3 class="services__title">Brand Consultation</h3>
+                        <p class="services__description">We offer our clients excellent quality services for many years, best in the city.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <img src="assets/img/4.jpeg" class="services__img"/>
+                        <h3 class="services__title">Online Reputation Management</h3>
+                        <p class="services__description">We offer our clients excellent quality services for many years, best in the city.</p>
+                    </div>
                     
+                    <div class="services__content">
+                        <img src="assets/img/6.jpeg" class="services__img"/>
+                        <h3 class="services__title">Mobile Marketing</h3>
+                        <p class="services__description">We offer our clients excellent quality services for many years, best in the city.</p>
+                    </div>
+                    
+                    <div class="services__content">
+                        <img src="assets/img/5.jpeg" class="services__img"/>
+                        <h3 class="services__title">Graphic Design</h3>
+                        <p class="services__description">We offer our clients excellent quality services for many years, best in the city.</p>
+                    </div>
+                    
+                    <div class="services__content">
+                        <img src="assets/img/7.jpeg" class="services__img"/>
+                        <h3 class="services__title">Digital Analysis</h3>
+                        <p class="services__description">We offer our clients excellent quality services for many years, best in the city.</p>
+                    </div>
+                    
+                    <div class="services__content">
+                        <img src="assets/img/8.jpeg" class="services__img"/>
+                        <h3 class="services__title">Search Engine Optimization</h3>
+                        <p class="services__description">We offer our clients excellent quality services for many years, best in the city.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <img src="assets/img/4.jpeg" class="services__img"/>
+                        <h3 class="services__title">Web Designing</h3>
+                        <p class="services__description">We offer our clients excellent quality services for many years, best in the city.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--========== MENU ==========-->
+            <!-- <section class="menu section bd-container" id="menu">
+                <span class="section-subtitle">Special</span>
+                <h2 class="section-title">Menu of the week</h2>
+
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <img src="assets/img/plate1.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Barbecue salad</h3>
+                        <span class="menu__detail">Delicious dish</span>
+                        <span class="menu__preci">$22.00</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/plate2.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Salad with fish</h3>
+                        <span class="menu__detail">Delicious dish</span>
+                        <span class="menu__preci">$12.00</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/plate3.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Spinach salad</h3>
+                        <span class="menu__detail">Delicious dish</span>
+                        <span class="menu__preci">$9.50</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                </div>
+            </section> -->
+
+            <!--===== APP =======-->
+            <section class="app section bd-container">
+                <div class="app__container bd-grid">
+                    <div class="app__data">
+                        <span class="section-subtitle app__initial">App</span>
+                        <h2 class="section-title app__initial">App is available</h2>
+                        <p class="app__description">Find our application and download it.</p>
+                        <div class="app__stores">
+                            <a href="#"><img src="assets/img/app1.png" alt="" class="app__store"></a>
+                            <a href="#"><img src="assets/img/app2.png" alt="" class="app__store"></a>
+                        </div>
+                    </div>
+
+                    <img src="assets/img/UNSOCIALS.jpg" alt="" class="app__img">
+                </div>
+            </section>
+
+            <!--========== CONTACT US ==========-->
+            <section class="contact section bd-container" id="contact">
+                <div class="contact__container bd-grid">
+                    <div class="contact__data">
+                        <span class="section-subtitle contact__initial">Let's talk</span>
+                        <h2 class="section-title contact__initial">Contact us</h2>
+                        <p class="contact__description">If you want a great presence of your company on social media, contact us and we will attend you quickly, with our 24/7 chat service.</p>
+                    </div>
+
+                    <div class="contact__button">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=unsocials@gmail.com" class="button" target="_blank">Contact us now</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">Unsocials</a>
+                    <span class="footer__description">Marketing Solutions</span>
                     <div>
-                        <a href="#" class="home__button anime-text">Explore</a>
+                        <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
                     </div>
                 </div>
 
-                <div class="home__img">
-                    <img src="assets/img/im.jpg" alt="">
-                </div>
-                
-                <div class="home__social">
-                    <ion-icon name="logo-facebook" class="home__social-icon"></ion-icon>
-                    <ion-icon name="logo-instagram" class="home__social-icon"></ion-icon>
-                    <ion-icon name="logo-twitter" class="home__social-icon"></ion-icon>
+                <div class="footer__content">
+                    <h3 class="footer__title">Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Social Media</a></li>
+                        <li><a href="#" class="footer__link">Photography</a></li>
+                        <li><a href="#" class="footer__link">Digital Reputation</a></li>
+                        <li><a href="#" class="footer__link">Get clicked by the best</a></li>
+                    </ul>
                 </div>
 
+                <div class="footer__content">
+                    <h3 class="footer__title">Information</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Events</a></li>
+                        <li><a href="#" class="footer__link">Contact us</a></li>
+                        <li><a href="#" class="footer__link">Privacy policy</a></li>
+                        <li><a href="#" class="footer__link">Terms of services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Address</h3>
+                    <ul>
+                        <li>Jaipur</li>
+                        <li>Rajasthan</li>
+                        <li>+91 9999999999</li>
+                        <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=unsocials@gmail.com">unsocials@email.com</a></li>
+                    </ul>
+                </div>
             </div>
-        </main>
 
-        <!-- GSAP -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+            <p class="footer__copy">&#169; 2021 Unsocials. All right reserved</p>
+        </footer>
 
-        <!-- MAIN -->
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
         <script src="assets/js/main.js"></script>
-    
-        <!-- ICONS -->
-        <script  type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
     </body>
 </html>
