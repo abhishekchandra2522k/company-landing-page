@@ -252,6 +252,7 @@ img{
   background-image: url("/assets/img/img101.jpg");
   background-position: right, left;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .home__container{
@@ -269,11 +270,62 @@ img{
   font-size: var(--h1-font-size);
   color: var(--title-color);
   margin-bottom: var(--mb-4);
+  /* margin-top: 2rem; */
 }
 
 .home__img{
   width: 300px;
   justify-self: center;
+}
+
+/* animation */
+.anima{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  /* padding-bottom: 0; */
+}
+
+.anim{
+  position: relative;
+  height: auto;
+  width: auto;
+  margin: 0;
+  height: 65px;
+  z-index: -1;
+}
+
+.anime{
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  animation: animate 6s linear infinite;
+}
+
+@keyframes animate{
+  0%{
+    transform: translateY(0px);
+  }
+  30%{
+    transform: translateY(0px);
+  }
+  40%{
+    transform: translateY(-80px);
+  }
+  65%{
+    transform: translateY(-80px);
+  }
+  75%, 100%{
+    transform: translateY(-160px);
+  }
+}
+
+.anime li{
+  list-style: none;
+  height: 80px;
 }
 
 /*========== BUTTONS ==========*/
