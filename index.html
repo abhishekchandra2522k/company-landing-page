@@ -9,6 +9,7 @@
         <link rel="icon" href="assets/img/logo.PNG">
         <!--========== CSS ==========-->
         <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
         <title>Unsocials</title>
     </head>
@@ -22,14 +23,14 @@
         <!--========== HEADER ==========-->
         <header class="l-header" id="header">
             <nav class="nav bd-container">
-                <a href="#" class="nav__logo">Unsocials</a>
+                <a href="#" class="nav__logo"><strong>U N S O C I A L S</strong></a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-                        <li class="nav__item"><a href="#menu" class="nav__link">Blog</a></li>
+                        <li class="nav__item"><a href="#menu" class="nav__link">Clients</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
 
                         <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
@@ -45,33 +46,39 @@
         <main class="l-main">
             <!--========== HOME ==========-->
             <section class="home" id="home">
-                <div class="home__container bd-container bd-grid">
-                    <div class="home__data">
-                        <h1 class="home__title anima">Un
-                            <div class="anim">
-                                <ul class="anime">
-                                    <li style="color: rgb(255, 230, 0);">socials</li>
-                                    <li style="color: aliceblue;">socials</li>
-                                    <li style="color: rgb(255, 0, 0);">socials</li>
-                                </ul>
-                            </div>
-                            </h1>
-                        <h2 class="home__subtitle">Embrace the <br>Social Seas of Marketing <br>with unsocials.</h2>
-                        <a href="#" class="button">Explore</a>
-                    </div>
-    
-                    <img src="assets/img/logo png.PNG" alt="" class="home__img">
-                </div>
+                <video autoplay muted loop id="myVideo">
+                    <source src="assets/img/web_black.mp4" type="video/mp4">
+                  </video>
             </section>
             
             <!--========== ABOUT ==========-->
-            <section class="about section bd-container" id="about">
+            <section class="about section" id="about">
                 <div class="about__container  bd-grid">
                     <div class="about__data">
                         <span class="section-subtitle about__initial">About us</span>
-                        <h2 class="section-title about__initial">We cook the best <br> digital reputation.</h2>
-                        <p class="about__description">We help companies build amazing products.</p>
-                        <a href="#" class="button">Explore history</a>
+                        <h2 class="section-title about__initial">We cook the best digital reputation.</h2>
+                        <p class="about__description">Established in 2020, Unsocials is a new age Marketing Agency, headquartered in Jaipur, Rajasthan. 
+                            <br>
+                            Unsocials, despite being new, has worked with pan India customers from various business verticals. 
+                            Unsocials sits pretty amidst the cultural gem of India which mirrors our creative work as well.
+                            <br>
+                            As a full-service digital marketing agency, we provide content creation, social media, web design, internet marketing, SEO, social media, Design communication, Analytics and more to businesses large and small that are looking to broadcast their messages more efficiently as per their target audience.
+                            
+                            Today, Unsocials is run by a close-knit team with experts in all facets of digital marketing.  The innovative, creative and exceptional work has helped Unsocials blossom into a full fledged digital marketing agency, apt in bringing life to brands - strategically, creatively and technically. 
+                            As we grow, we are committed to the vision that founded our guiding force and success -
+                            <br>
+                            Creative output,
+                            Futuristic thinking,
+                            Highest quality standard,
+                            Customized solutions,
+                            Personalized attention,
+                            ROI focused strategy.<br>
+                            Contact us to get started on your a new age solution for your projects with us
+                        </p>
+                        <a href="#menu" class="button">Our Clients</a>
+                        <span>&nbsp;</span>
+                        <a href="#contact-form" class="button">Contact us now</a>
+                        
                     </div>
 
                     <img src="assets/img/about.jpg" alt="" class="about__img">
@@ -87,7 +94,9 @@
                     <div class="services__content">
                         <img src="assets/img/9.jpeg" class="services__img"/>
                         <h3 class="services__title">Social Media Marketing</h3>
-                        <p class="services__description">We offer comprehensive social media management services for all business verticlas. So, we transform your social media presence with high-quality content, catchy graphics, daily activity, monitoring-engagement and increased followers.</p>
+                        <p class="services__description">We offer comprehensive social media management services<span id="dots">...</span><span id="more"> 
+                            for all business verticlas. So, we transform your social media presence with high-quality content, catchy graphics, daily activity, monitoring-engagement and increased followers.</span></p>
+                            <a onclick="myFunction()" id="myBtn" style="color: blue;">Read more</a>
                     </div>
 
                     <div class="services__content">
@@ -135,53 +144,56 @@
             </section>
 
             <!--========== MENU ==========-->
-            <!-- <section class="menu section bd-container" id="menu">
-                <span class="section-subtitle">Special</span>
-                <h2 class="section-title">Menu of the week</h2>
+            <section class="menu section bd-container" id="menu">
+                <h2 class="section-title">Our Clients</h2>
 
                 <div class="menu__container bd-grid">
                     <div class="menu__content">
-                        <img src="assets/img/plate1.png" alt="" class="menu__img">
-                        <h3 class="menu__name">Barbecue salad</h3>
-                        <span class="menu__detail">Delicious dish</span>
-                        <span class="menu__preci">$22.00</span>
-                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                        <img src="assets/img/atsui.jpg" alt="" class="menu__img">
                     </div>
 
                     <div class="menu__content">
-                        <img src="assets/img/plate2.png" alt="" class="menu__img">
-                        <h3 class="menu__name">Salad with fish</h3>
-                        <span class="menu__detail">Delicious dish</span>
-                        <span class="menu__preci">$12.00</span>
-                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                        <img src="assets/img/bombae.jpg" alt="" class="menu__img">
                     </div>
                     
                     <div class="menu__content">
-                        <img src="assets/img/plate3.png" alt="" class="menu__img">
-                        <h3 class="menu__name">Spinach salad</h3>
-                        <span class="menu__detail">Delicious dish</span>
-                        <span class="menu__preci">$9.50</span>
-                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
-                    </div>
-                </div>
-            </section> -->
-
-            <!--===== APP =======-->
-            <section class="app section bd-container">
-                <div class="app__container bd-grid">
-                    <div class="app__data">
-                        <span class="section-subtitle app__initial">App</span>
-                        <h2 class="section-title app__initial">App is available</h2>
-                        <p class="app__description">Find our application and download it.</p>
-                        <div class="app__stores">
-                            <a href="#"><img src="assets/img/app1.png" alt="" class="app__store"></a>
-                            <a href="#"><img src="assets/img/app2.png" alt="" class="app__store"></a>
-                        </div>
+                        <img src="assets/img/etaxology.jpg" alt="" class="menu__img">
                     </div>
 
-                    <img src="assets/img/UNSOCIALS.jpg" alt="" class="app__img">
+                    <div class="menu__content">
+                        <img src="assets/img/jaisavi_homes.jpg" alt="" class="menu__img">
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/radisson_blu.jpg" alt="" class="menu__img">
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/queens_hub.JPG" alt="" class="menu__img">
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/shahpura_hotels.jpg" alt="" class="menu__img">
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/route_16.JPG" alt="" class="menu__img">
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/taxi_chick_inn.jpg" alt="" class="menu__img">
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/transymedia.jpg" alt="" class="menu__img">
+                    </div>
                 </div>
             </section>
+
+            <!--===== Portfolio =======-->
+            
+
+
 
             <!--========== CONTACT US ==========-->
             <section class="contact section bd-container" id="contact">
@@ -193,8 +205,28 @@
                     </div>
 
                     <div class="contact__button">
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=unsocials@gmail.com" class="button" target="_blank">Contact us now</a>
+                        <a href="#contact-form" class="button">Contact us now</a>
                     </div>
+                </div>
+            </section>
+
+            <!-- ===== CONTACT FORM =====--> 
+            <section class="contact section" id="contact-form">
+                <span class="section-subtitle">Contact Us</span>
+                <h2 class="section-title">Get in Touch</h2>
+
+                <div class="contact__container contact__container1 bd-grid">
+                    <form action="mailto:unsocials@gmail.com" method="get" enctype="text/plain" class="contact__form">
+                        <div class="contact__inputs">
+                            <input type="text" placeholder="Name" name="Name" class="contact__input">
+                            <input type="mail" placeholder="Email" name="E-mail" class="contact__input">
+                        </div>
+                        <input type="text" placeholder="Subject" class="contact__input" name="Project">
+
+                        <input name="Message" id="" cols="0" rows="10" placeholder="Message" class="contact__input message"> 
+                        <input type="submit" value="Send" class="button contact__button">
+                        <input type="reset" value="Reset" class="button contact__button">
+                    </form>
                 </div>
             </section>
         </main>
@@ -206,9 +238,11 @@
                     <a href="#" class="footer__logo">Unsocials</a>
                     <span class="footer__description">Marketing Solutions</span>
                     <div>
-                        <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
-                        <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
-                        <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://www.facebook.com/unsocials.social" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://www.instagram.com/unsocials.social/" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://twitter.com/Unsocialsmedia" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://www.youtube.com/channel/UCbR2tG_ejw54014icbZn_Gg/featured" class="footer__social"><i class='bx bxl-youtube'></i></a>
+                        <a href="https://www.linkedin.com/company/unsocials-social/" class="footer__social"><i class='bx bxl-linkedin'></i></a>
                     </div>
                 </div>
 
