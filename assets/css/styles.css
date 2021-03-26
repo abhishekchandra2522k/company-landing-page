@@ -122,6 +122,14 @@ img{
   margin-bottom: var(--mb-3);
 }
 
+.port{
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+  margin-bottom: -4rem;
+  margin-top: 4rem;
+  text-align: center;
+}
+
 .section-subtitle{
   display: block;
   color: var(--first-color);
@@ -412,6 +420,77 @@ img{
   border-radius: .5rem 0 .5rem 0;
 }
 
+/* === Slider CSS === */
+.p1{
+  color: #FFF;
+  font-size: 3rem;
+  /* pointer-events: auto; */
+  cursor: pointer;
+}
+
+.p1:hover{
+  color: #525151;
+}
+
+.p5{
+  height: 300px;
+}
+
+.slider{
+  position: relative;
+  /* left: 10%; */
+  /* width: 80%; */
+  height: 300px;
+  overflow: hidden;
+}
+
+.slider-inner{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250%;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  /* gap: 2px; */
+  pointer-events: none;
+}
+
+.slide-img{
+  height: 100%;
+  background-color: #fffefe;
+  text-align: center;
+  /* padding: 3rem; */
+  width: 300px;
+}
+
+@media screen and (min-width: 576px){
+  .slider{
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .slider-inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250%;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    /* gap: 2px; */
+    pointer-events: none;
+  }
+  
+  .slide-img{
+    height: 100%;
+    background-color: #fffefe;
+    text-align: center;
+    /* padding: 3rem; */
+    width: 300px;
+  }
+}
 
 /*========== CONTACT ==========*/
 .contact__container{
