@@ -352,7 +352,7 @@ img{
 }
 
 .services__content{
-  text-align: center;
+  text-align: left;
 }
 
 .services__img{
@@ -360,6 +360,8 @@ img{
   height: 64px;
   fill: var(--first-color);
   margin-bottom: var(--mb-2);
+  /* justify-content: center; */
+  margin-left: 3.8rem;
 }
 
 .services__title{
@@ -420,76 +422,14 @@ img{
   border-radius: .5rem 0 .5rem 0;
 }
 
-/* === Slider CSS === */
-.p1{
-  color: #FFF;
-  font-size: 3rem;
-  /* pointer-events: auto; */
-  cursor: pointer;
+
+.slick-slide{
+  margin: 0px 10px;
 }
 
-.p1:hover{
-  color: #525151;
-}
-
-.p5{
-  height: 300px;
-}
-
-.slider{
-  position: relative;
-  /* left: 10%; */
-  /* width: 80%; */
-  height: 300px;
-  overflow: hidden;
-}
-
-.slider-inner{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 250%;
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  /* gap: 2px; */
-  pointer-events: none;
-}
-
-.slide-img{
-  height: 100%;
-  background-color: #fffefe;
-  text-align: center;
-  /* padding: 3rem; */
-  width: 300px;
-}
-
-@media screen and (min-width: 576px){
-  .slider{
-    position: relative;
-    height: 300px;
-    overflow: hidden;
-  }
-  
-  .slider-inner{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 250%;
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    /* gap: 2px; */
-    pointer-events: none;
-  }
-  
-  .slide-img{
-    height: 100%;
-    background-color: #fffefe;
-    text-align: center;
-    /* padding: 3rem; */
-    width: 300px;
-  }
+.slick-slide img{
+  width: 100%;
+  /* pointer-events: none; */
 }
 
 /*========== CONTACT ==========*/
@@ -497,6 +437,7 @@ img{
   text-align: center;
   row-gap: 3rem;
   align-content: center;
+  /* margin-top: -2rem; */
 }
 
 .contact__description{
