@@ -321,9 +321,10 @@ img{
   background-color: var(--first-color-alt);
 }
 
-#myBtn:hover{
+#myBtn, #myBtn1, #myBtn2:hover{
   cursor: pointer;
 }
+
 
 /*========== ABOUT ==========*/
 .about__data{
@@ -342,17 +343,20 @@ img{
 }
 
 /*========== SERVICES ==========*/
-#more{
+#more, #more1, #more2{
   display: none;
 }
 
 .services__container{
   row-gap: 2.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
+  grid-template-columns: repeat(2,1fr);
 }
 
 .services__content{
-  text-align: left;
+  text-align: center;
+  /* margin-left: -3rem; */
 }
 
 .services__img{
@@ -360,8 +364,10 @@ img{
   height: 64px;
   fill: var(--first-color);
   margin-bottom: var(--mb-2);
-  /* justify-content: center; */
-  margin-left: 3.8rem;
+  justify-content: center;
+  /* position: absolute; */
+  /* align-items: center; */
+  /* margin-left: 3.8rem; */
 }
 
 .services__title{
@@ -564,6 +570,7 @@ img{
   .contact__button{
     justify-self: center;
   }
+
 }
 
 @media screen and (min-width: 768px){
@@ -648,6 +655,10 @@ img{
   .app__container{
     column-gap: 0rem;
     margin-right: 4rem;
+  }
+
+  .services__container{
+    margin-left: -3rem;
   }
 }
 
