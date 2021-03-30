@@ -205,31 +205,58 @@
                 <!-- <h2>Our Partners</h2> -->
                 <section class="customer-logos slider">
                     <div class="slide">
-                        <img src="assets/img/p1.jpg" alt="">
+                        <img src="assets/img/p1.jpg" alt="" class="img__img">
+                        <div class="image__overlay">
+                            <p class="image__title">Taxi Chick Inn</p>
+                        </div>
                     </div>
                     <div class="slide">
-                        <img src="assets/img/p2.JPG" alt="">
+                        <img src="assets/img/p2.JPG" alt="" class="img__img">
+                        <div class="image__overlay">
+                            <p class="image__title">Hey Queen's</p>
+                        </div>
                     </div>
                     <div class="slide">
-                        <img src="assets/img/p3.jpg" alt="">
+                        <img src="assets/img/p3.jpg" alt="" class="img__img">
+                        <div class="image__overlay">
+                            <p class="image__title">Sizzling Soon</p>
+                        </div>
                     </div>
                     <div class="slide">
-                        <img src="assets/img/p4.jpg" alt="">
+                        <img src="assets/img/p4.jpg" alt="" class="img__img">
+                        <div class="image__overlay">
+                            <p class="image__title">Burger</p>
+                        </div>
                     </div>
                     <div class="slide">
-                        <img src="assets/img/p5.jpg" alt="">
+                        <img src="assets/img/p5.jpg" alt="" class="img__img">
+                        <div class="image__overlay">
+                            <p class="image__title">Shaadi by</p>
+                        </div>
                     </div>
                     <div class="slide">
-                        <img src="assets/img/p6.JPG" alt="">
+                        <img src="assets/img/p6.JPG" alt="" class="img__img">
+                        <div class="image__overlay">
+                            <p class="image__title">Transy Media</p>
+                        </div>
                     </div>
                     <div class="slide">
-                        <img src="assets/img/p7.JPG" alt="">
+                        <img src="assets/img/p7.JPG" alt="" class="img__img">
+                        <div class="image__overlay">
+                            <p class="image__title">BOMBAE</p>
+                        </div>
                     </div>
                     <div class="slide">
-                        <img src="assets/img/p8.JPG" alt="">
+                        <img src="assets/img/p8.JPG" alt="" class="img__img">
+                        <div class="image__overlay">
+                            <p class="image__title">Hot Coffee</p>
+                        </div>
                     </div>
                     <div class="slide">
-                        <img src="assets/img/p9.JPG" alt="">
+                        <img src="assets/img/p9.JPG" alt="" class="img__img">
+                        <div class="image__overlay">
+                            <p class="image__title">Akar</p>
+                        </div>
                     </div>
                 </section>
 
@@ -256,18 +283,42 @@
 
             <!-- ===== CONTACT FORM =====--> 
             <section class="contact section" id="contact-form">
-                <span class="section-subtitle">How Can We Help?</span>
-                <h2 class="section-title">Get in Touch</h2>
+                <h2 class="section-title">How Can We Help?</h2>
+                <span class="section-subtitle">If you’ve got a requirement you’d like to discuss, or if you simply want to know more about how we work, get in touch.</span>
+                <span class="section-subtitle">Digital Requirements</span><br><br>
 
                 <div class="contact__container contact__container1 bd-grid">
-                    <form action="mailto:unsocials@gmail.com" method="get" enctype="text/plain" class="contact__form">
+                    <form action="mailto:unsocials@gmail.com" method="post" enctype="text/plain" class="contact__form">
                         <div class="contact__inputs">
-                            <input type="text" placeholder="Name" name="Name" class="contact__input">
-                            <input type="mail" placeholder="Email" name="E-mail" class="contact__input">
+                            <input type="text" placeholder="Name*" name="Name" class="contact__input" required>
+                            <input type="text" placeholder="Mobile*" name="Mobile" class="contact__input" required>
                         </div>
-                        <input type="text" placeholder="Subject" class="contact__input" name="Project">
-
-                        <input name="Message" id="" cols="0" rows="10" placeholder="Message" class="contact__input message"> 
+                        <div class="contact__inputs">
+                            <input type="mail" placeholder="Email*" name="E-mail" class="contact__input" required>
+                            <input type="text" placeholder="Company*" class="contact__input" name="Company" required>
+                        </div>
+                        <select name="Requirement" id="requirement" class="contact__input" aria-placeholder="requirement" required>
+                            <option value="none">Select Requirement Type*</option>
+                            <option value="Digital Requirement">Digital Requirement</option>
+                            <option value="Social Media Marketing">Social Media Marketing</option>
+                            <option value="Programmatic Solutions">Programmatic Solutions</option>
+                            <option value="Web Application Development">Web Application Development</option>
+                            <option value="Ecommerce Solution">Ecommerce Solution</option>
+                            <option value="Media Solution">Media Solution</option>
+                            <option value="SEO">SEO</option>
+                            <option value="Digital Content">Digital Content</option>
+                            <option value="Online Reputation Management">Online Reputation Management</option>
+                            <option value="Others">Any other</option>
+                        </select>
+                        <select name="Budget" id="budget" class="contact__input" required>
+                            <option value="none">Current Annual Digital Budget(INR)*</option>
+                            <option value="Upto 1Cr">Upto 1Cr</option>
+                            <option value="1-3Cr">1-3Cr</option>
+                            <option value="3-5Cr">3-5Cr</option>
+                            <option value="5-10Cr">5-10Cr</option>
+                            <option value="10Cr+">10 Cr+</option>
+                        </select>
+                        <input name="Message" id="" cols="0" rows="10" placeholder="Describe your Requirement.." class="contact__input message" required> 
                         <input type="submit" value="Send" class="button contact__button">
                         <input type="reset" value="Reset" class="button contact__button">
                     </form>
@@ -276,7 +327,7 @@
         </main>
 
         <!--========== FOOTER ==========-->
-        <footer class="footer section bd-container">
+        <footer class="footer section container">
             <div class="footer__container bd-grid">
                 <div class="footer__content">
                     <a href="#" class="footer__logo">Unsocials</a>
@@ -315,7 +366,7 @@
                     <ul>
                         <li>Jaipur</li>
                         <li>Rajasthan</li>
-                        <li>+91 9999999999</li>
+                        <li><a href="tel:+91 9999999999">+91 9999999999</a></li>
                         <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=unsocials@gmail.com">unsocials@email.com</a></li>
                     </ul>
                 </div>
