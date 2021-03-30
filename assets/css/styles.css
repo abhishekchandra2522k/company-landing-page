@@ -6,7 +6,7 @@
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  --first-color: #49453f;
+  --first-color: #857e75;
   --first-color-alt: #6b887e;
   --title-color: #393939;
   --text-color: #000000;
@@ -355,7 +355,7 @@ img{
 }
 
 .services__content{
-  text-align: center;
+  text-align: left;
   /* margin-left: -3rem; */
 }
 
@@ -435,8 +435,68 @@ img{
 
 .slick-slide img{
   width: 100%;
-  /* pointer-events: none; */
 }
+
+/* .slick-slide img:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+} */
+
+.slide{
+  position: relative;
+}
+
+.img__img{
+  display: block;
+  width: 100%;
+}
+
+.img__img:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.image__overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  /* background-color: #000000; */
+  color: #FFF;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* font-family: 'Quicksand', sans-serif; */
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.image__overlay:hover{
+  opacity: 1;
+  /* font-weight: 700; */
+  /* transform: scale(1.1); */
+  /* transition: 0.5s; */
+}
+
+/* .image__overlay:hover + .slide{
+  transform: scale(1.1);
+  transition: 0.5s;
+} */
+
+/* .image__overlay:hover + #zoom-in + img{
+  transform: scale(1.1);
+  transition: 0.3s ease-in;
+} */
+
+.image__title{
+  font-size: 2em;
+}
+
+
 
 /*========== CONTACT ==========*/
 .contact__container{
@@ -465,7 +525,19 @@ img{
   color: var(--first-color-dark);
   font-family: var(--body-font);
   font-weight: var(--font-medium);
+  /* opacity: 0.6; */
 }
+
+select{
+  color: #000000;
+  font-family: var(--body-font);
+  font-weight: var(--font-medium);
+  /* opacity: 0.6; */
+}
+
+/* select::option{
+  opacity: 0.6;
+} */
 
 .contact__button{
   outline: none;
@@ -500,6 +572,7 @@ img{
 .footer__container{
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   row-gap: 2rem;
+  margin-left: 2rem;
 }
 
 .footer__logo{
@@ -612,7 +685,7 @@ img{
   }
 
   .menu__container{
-    grid-template-columns: repeat(3, 210px);
+    grid-template-columns: repeat(4, 210px);
     column-gap: 4rem;
   }
   .menu__content{
@@ -659,6 +732,10 @@ img{
 
   .services__container{
     margin-left: -3rem;
+  }
+
+  .footer__container{
+    margin-left: 6rem;
   }
 }
 
