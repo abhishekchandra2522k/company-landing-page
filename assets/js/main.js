@@ -201,3 +201,29 @@ $(document).ready(function(){
         ]
     })
 });
+
+$(document).ready(function(){
+    $('.customer-logos1').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 700,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 2
+                }
+            }
+        ]
+    })
+});
