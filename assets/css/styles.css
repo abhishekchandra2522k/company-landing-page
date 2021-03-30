@@ -604,7 +604,7 @@ select{
 }
 
 /*========== MEDIA QUERIES ==========*/
-@media screen and (min-width: 576px){
+@media screen and (min-width: 1000px){
   .home__container,
   /* .about__container, */
   .app__container{
@@ -616,8 +616,8 @@ select{
   /* .app__data, .app__initial, */
   .contact__container1, .contact__initial{
     text-align: center;
-    margin-left: 25rem;
-    margin-right: 25rem;
+    margin-left: 30rem;
+    margin-right: 30rem;
   }
 
   .about__img, .app__img{
@@ -634,7 +634,13 @@ select{
   }
 
 }
-
+@media screen and (max-width: 68px){
+  .contact__container1, .contact__initial{
+    text-align: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
 @media screen and (min-width: 768px){
   body{
     margin: 0;
@@ -697,6 +703,12 @@ select{
   .contact__info{
     padding-left: 3rem;
   }
+
+  /* .contact__container1, .contact__initial{
+    text-align: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  } */
   
 }
 
