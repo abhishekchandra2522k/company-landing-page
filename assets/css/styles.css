@@ -274,6 +274,7 @@ img{
 
 #myVideo {
   width: 100%;
+  pointer-events: none;
 }
 
 
@@ -333,7 +334,7 @@ img{
 
 /*========== ABOUT ==========*/
 .about__data{
-  text-align: left;
+  text-align: center;
   margin-left: 2rem;
   margin-right: 2rem;
 }
@@ -469,6 +470,7 @@ img{
   row-gap: 3rem;
   align-content: center;
   margin-top: 2rem;
+  /* width: 50%; */
 }
 
 .contact__description{
@@ -626,9 +628,11 @@ select{
   /* .app__data, .app__initial, */
   .contact__container1, .contact__initial{
     text-align: center;
-    margin-left: 30rem;
-    margin-right: 30rem;
+    margin-left: 35rem;
+    margin-right: 35rem;
   }
+
+  
 
   .about__img, .app__img{
     width: 380px;
@@ -694,6 +698,7 @@ select{
   }
   .menu__img{
     width: 130px;
+    pointer-events: none;
   }
 
   .app__store{
