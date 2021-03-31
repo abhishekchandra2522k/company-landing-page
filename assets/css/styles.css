@@ -363,6 +363,8 @@ img{
 
 .services__description{
   text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .services__img{
@@ -729,6 +731,12 @@ select{
 
   .footer__container{
     margin-left: 6rem;
+  }
+
+  .services__container{
+    padding-left: 4rem;
+    padding-right: 6rem;
+    column-gap: 10rem;
   }
 }
 
