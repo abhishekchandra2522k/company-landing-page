@@ -35,6 +35,7 @@
                         <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
                         <li class="nav__item"><a href="#menu" class="nav__link">Our Clients</a></li> 
                         <li class="nav__item"><a href="#port" class="nav__link">Portfolio</a></li>
+                        <li class="nav__item"><a href="#career" class="nav__link">Careers</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
                         <!-- <li><a href="tel:+917627031394"><i class='bx bxs-phone' style="color: aliceblue;"></i></a></li> -->
 
@@ -118,8 +119,27 @@
                     
                     <div class="services__content">
                         <img src="assets/img/5.jpeg" class="services__img"/>
-                        <h3 class="services__title">Graphic Design</h3>
-                        <p class="services__description">We offer our clients excellent quality services for many years, best in the city.</p>
+                        <h3 class="services__title">UI / UX</h3>
+                        <p class="services__description">As per a recent survey, 75% of the customers judge a brand by their website. 
+
+                            72% of the customers will leave a website within ten seconds if they don't feel engaged by the design,<span id="dots3">...</span><span id="more3"> layout or the user interface.
+                            
+                            Over 90% of the customers do not trust a business with an outdated website.
+                            
+                            More than 50% of the customers do no trust a business which hasn't optimized their mobile site. 
+                            
+                            Unsocials vibrant and youthful team knows the worth of designing great exepriences for the customers.
+                            
+                            We understand when building a website, overall appeal is important to leave a lasting and positive impact on your audience - within the first few seconds.
+                            
+                            Your website is the window to your business. A quality website can help engage your audience This  and help them learn in detail about your product and services - turning them into leads. 
+                            
+                            Unsocials can help you with creating engaging web page designs, capable of capturing the users’ attention quickly.
+                            
+                            We also follow current web design practices on the website, which directly impact the Search Engines to crawl and index your website. 
+                            
+                            So, what are you waiting for? Partner up today with us to reinvigorate your website.</span></p>
+                            <a onclick="myFunction3()" id="myBtn3" style="color: blue;">Read more</a>
                     </div>
                     
                     <div class="services__content">
@@ -288,32 +308,85 @@
                         <div class="contact__inputs">
                             <input type="mail" placeholder="Email*" name="E-mail" class="contact__input" required>
                             <input type="text" placeholder="Company*" class="contact__input" name="Company" required>
+                            <input type="text" placeholder="Location*" class="contact__input" name="Location" required>
                         </div>
                         <select name="Requirement" id="requirement" class="contact__input" aria-placeholder="requirement" required>
-                            <option value="none">Select Requirement Type*</option>
-                            <option value="Digital Requirement">Digital Requirement</option>
+                            <option value="none">Select Requirement Type</option>
                             <option value="Social Media Marketing">Social Media Marketing</option>
-                            <option value="Programmatic Solutions">Programmatic Solutions</option>
-                            <option value="Web Application Development">Web Application Development</option>
+                            <option value="SEO">SEO</option>
+                            <option value="Mobile Search">Mobile Search</option>
+                            <option value="UI / UX">UI / UX</option>
+                            
+                            
+                            <option value="Web Development">Web Development</option>
                             <option value="Ecommerce Solution">Ecommerce Solution</option>
                             <option value="Media Solution">Media Solution</option>
-                            <option value="SEO">SEO</option>
+                            
                             <option value="Digital Content">Digital Content</option>
                             <option value="Online Reputation Management">Online Reputation Management</option>
                             <option value="Others">Any other</option>
                         </select>
                         <select name="Budget" id="budget" class="contact__input" required>
                             <option value="none">Current Annual Digital Budget(INR)*</option>
-                            <option value="Upto 1Cr">Upto 1Cr</option>
-                            <option value="1-3Cr">1-3Cr</option>
-                            <option value="3-5Cr">3-5Cr</option>
-                            <option value="5-10Cr">5-10Cr</option>
-                            <option value="10Cr+">10 Cr+</option>
+                            <option value="Upto 1Cr">Upto 5L</option>
+                            <option value="1-3Cr">5-8L</option>
+                            <option value="3-5Cr">8-10L</option>
+                            <option value="5-10Cr">10-15L</option>
+                            <option value="10Cr+">15 L+</option>
                         </select>
                         <input name="Message" id="" cols="0" rows="10" placeholder="Describe your Requirement.." class="contact__input message" required> 
                         <input type="submit" value="Send" class="button contact__button">
                         <input type="reset" value="Reset" class="button contact__button">
                     </form>
+                </div>
+            </section>
+        
+            <section id="career" class="contact section">
+                <div class="contact__container">
+                    <div class="contact__data">
+                        <span class="section-subtitle contact__initial">Careers</span>
+                        <h2 class="section-title contact__initial">Let's Work Together</h2>
+                        <p class="contact__description">Please fill the form below or mail us at <a href="https://mail.google.com/mail/?view=cm&fs=1&to=unsocials@gmail.com" style="color: gray;">unsocials@email.com</a>
+
+                            or call us at (+91) 7627031394</p>
+                    </div>
+
+                    <div class="contact__container contact__container1 bd-grid">
+                        <form action="mailto:unsocials@gmail.com" method="post" enctype="text/plain" class="contact__form">
+                            <div class="contact__inputs">
+                                <input type="text" placeholder="Name*" name="Name" class="contact__input" required>
+                                <input type="mail" placeholder="Email*" name="E-mail" class="contact__input" required>
+                            </div>
+                            <div class="contact__inputs">
+                                <input type="text" placeholder="Mobile*" name="Mobile" class="contact__input" required>
+                                <!-- <input type="text" placeholder="Position*" class="contact__input" name="Position" required> -->
+                                <select name="Requirement" id="requirement" class="contact__input" aria-placeholder="requirement" required>
+                                    <option value="none">Position</option>
+                                    <option value="Social Media Manager">Social Media Manager</option>
+                                    <option value="Sales Manager">Sales Manager</option>
+                                    <option value="Mobile Search">Mobile Search</option>
+                                    <option value="UI / UX Designer">UI / UX Designer</option>
+                                    
+                                    
+                                    <option value="Web Developer">Web Developer</option>
+                                    <option value="Client Servicing Executive">Client Servicing Executive</option>
+                                    <!-- <option value="Media Solution">Media Solution</option>
+                                    
+                                    <option value="Digital Content">Digital Content</option>
+                                    <option value="Online Reputation Management">Online Reputation Management</option> -->
+                                    <option value="Others">Any other</option>
+                                </select>
+                                <input type="text" placeholder="Current CTC*" class="contact__input" name="CCTC" required>
+                                <input type="text" placeholder="Expected CTC*" class="contact__input" name="ECTC" required>
+                                <input type="text" placeholder="Notice Period" class="contact__input" name="Notice Period" required>
+                            </div>
+            
+                            <input name="Message" id="" cols="0" rows="10" placeholder="You got to know us from" class="contact__input message" required> 
+                            <input name="Message" id="" cols="0" rows="10" placeholder="Why do you want to work with us?" class="contact__input message" required> 
+                            <input type="submit" value="Send" class="button contact__button">
+                            <input type="reset" value="Reset" class="button contact__button">
+                        </form>
+                    </div>
                 </div>
             </section>
         </main>
@@ -359,8 +432,8 @@
                         <li>G-6, JC Heights, Ajmer Road</li>
                         <li>Jagdamba Nagar, Jaipur</li>
                         <li>Rajasthan, 302024</li>
-                        <li><a href="tel:+917627031394">+91 7627031394</a></li>
-                        <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=unsocials@gmail.com">unsocials@email.com</a></li>
+                        <li><a href="tel:+917627031394" style="color: gray;">+91 7627031394</a></li>
+                        <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=unsocials@gmail.com" style="color: gray;">unsocials@email.com</a></li>
                     </ul>
                 </div>
             </div>
