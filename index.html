@@ -26,7 +26,7 @@
         <header class="l-header" id="header">
             <nav class="nav">
                 <p class="nav__logo"><strong>+91 7627031394  &nbsp;&nbsp;| <a href="https://www.facebook.com/unsocials.social" class="nav__logo"><i class='bx bxl-facebook'></i></a>
-                    <a href="https://www.instagram.com/unsocials.social/" class="nav__logo"><i class='bx bxl-instagram'></i></a>    &nbsp;  <a href="https://www.linkedin.com/company/unsocials-social/" class="nav__logo"><i class='bx bxl-linkedin'></i></a> | &nbsp;&nbsp; UNSOCIALS</strong></p>
+                    <a href="https://www.instagram.com/unsocials.social/" class="nav__logo"><i class='bx bxl-instagram'></i></a>    &nbsp;  <a href="https://www.linkedin.com/company/unsocials-social/" class="nav__logo"><i class='bx bxl-linkedin'></i></a> | &nbsp;&nbsp; <a href="#home" style="color: gray;"></a></strong></p>
                 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
@@ -35,8 +35,8 @@
                         <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
                         <li class="nav__item"><a href="#menu" class="nav__link">Our Clients</a></li> 
                         <li class="nav__item"><a href="#port" class="nav__link">Portfolio</a></li>
-                        <li class="nav__item"><a href="#career" class="nav__link">Careers</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
+                        <li class="nav__item"><a href="#career" class="nav__link"><i class='bx bxs-megaphone'></i> We Are Hiring!</a></li>
                         <!-- <li><a href="tel:+917627031394"><i class='bx bxs-phone' style="color: aliceblue;"></i></a></li> -->
 
                         <li><i class='bx bx-moon change-theme' id="theme-button" style="color: black; cursor: alias;"></i></li>
@@ -300,7 +300,7 @@
                 <span class="section-subtitle">Digital Requirements</span><br><br>
 
                 <div class="contact__container contact__container1 bd-grid">
-                    <form action="mailto:unsocials@gmail.com" method="post" enctype="text/plain" class="contact__form">
+                    <form action="mailto:info@beunsocials@social" method="post" enctype="text/plain" class="contact__form">
                         <div class="contact__inputs">
                             <input type="text" placeholder="Name*" name="Name" class="contact__input" required>
                             <input type="text" placeholder="Mobile*" name="Mobile" class="contact__input" required>
@@ -346,47 +346,50 @@
                     <div class="contact__data">
                         <span class="section-subtitle contact__initial">Careers</span>
                         <h2 class="section-title contact__initial">Let's Work Together</h2>
-                        <p class="contact__description">Please fill the form below or mail us at <a href="https://mail.google.com/mail/?view=cm&fs=1&to=unsocials@gmail.com" style="color: gray;">unsocials@email.com</a>
+                        <p class="contact__description">Please fill the form below or mail us at <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@beunsocials@social" style="color: gray;">info@beunsocials@social</a>
 
                             or call us at (+91) 7627031394</p>
                     </div>
-
-                    <div class="contact__container contact__container1 bd-grid">
-                        <form action="mailto:unsocials@gmail.com" method="post" enctype="text/plain" class="contact__form">
-                            <div class="contact__inputs">
+                </div>
+                <div class="bg-modal">
+                    <div class="modal-content">
+                        
+                        <div class="close" style="color: aliceblue;">+</div>
+                    <!-- <div class="contact__container contact__container1 bd-grid" id="myContent"> -->
+                        <form action="mailto:info@beunsocials@social" method="post" enctype="text/plain" class="contact__form">
+                            <div class="contact__inputs1">
+                                <p>Let's Work Together</p><br><br>
                                 <input type="text" placeholder="Name*" name="Name" class="contact__input" required>
                                 <input type="mail" placeholder="Email*" name="E-mail" class="contact__input" required>
-                            </div>
-                            <div class="contact__inputs">
-                                <input type="text" placeholder="Mobile*" name="Mobile" class="contact__input" required>
-                                <!-- <input type="text" placeholder="Position*" class="contact__input" name="Position" required> -->
+                                <input type="text" placeholder="Contact Number*" name="Mobile" class="contact__input" required>
                                 <select name="Requirement" id="requirement" class="contact__input" aria-placeholder="requirement" required>
                                     <option value="none">Position</option>
                                     <option value="Social Media Manager">Social Media Manager</option>
                                     <option value="Sales Manager">Sales Manager</option>
                                     <option value="Mobile Search">Mobile Search</option>
                                     <option value="UI / UX Designer">UI / UX Designer</option>
-                                    
-                                    
                                     <option value="Web Developer">Web Developer</option>
                                     <option value="Client Servicing Executive">Client Servicing Executive</option>
-                                    <!-- <option value="Media Solution">Media Solution</option>
-                                    
-                                    <option value="Digital Content">Digital Content</option>
-                                    <option value="Online Reputation Management">Online Reputation Management</option> -->
                                     <option value="Others">Any other</option>
                                 </select>
                                 <input type="text" placeholder="Current CTC*" class="contact__input" name="CCTC" required>
                                 <input type="text" placeholder="Expected CTC*" class="contact__input" name="ECTC" required>
                                 <input type="text" placeholder="Notice Period" class="contact__input" name="Notice Period" required>
-                            </div>
+                            
             
-                            <input name="Message" id="" cols="0" rows="10" placeholder="You got to know us from" class="contact__input message" required> 
-                            <input name="Message" id="" cols="0" rows="10" placeholder="Why do you want to work with us?" class="contact__input message" required> 
-                            <input type="submit" value="Send" class="button contact__button">
+                            <input type="text" name="know" placeholder="You got to know us from" class="contact__input" required> 
+                            <input type="text" name="Why" placeholder="Why do you want to work with us?" class="contact__input" required> 
+                            <input type="submit" value="Apply Now" class="button contact__button">
                             <input type="reset" value="Reset" class="button contact__button">
+                        </div>
                         </form>
+                        
                     </div>
+                    
+                    </div>
+                    
+                    <span class="contact section-subtitle" id="popup"><input type="submit" value="Apply Now" class="button contact__button"></span>
+                </div>
                 </div>
             </section>
         </main>
@@ -432,8 +435,9 @@
                         <li>G-6, JC Heights, Ajmer Road</li>
                         <li>Jagdamba Nagar, Jaipur</li>
                         <li>Rajasthan, 302024</li>
-                        <li><a href="tel:+917627031394" style="color: gray;">+91 7627031394</a></li>
-                        <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=unsocials@gmail.com" style="color: gray;">unsocials@email.com</a></li>
+                        <li><i class='bx bxs-map' style="color: gray;"></i> <a href="https://goo.gl/maps/MyWoSLCzoe2nXmUY9" target="_blank" style="color: gray;">Get Directions</a></li>
+                        <li><a href="tel:+917627031394" style="color: gray;"><i class='bx bxs-phone' ></i> +91 7627031394</a></li>
+                        <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@beunsocials@social" style="color: gray;"><i class='bx bx-mail-send'></i> info@beunsocials@social</a></li>
                     </ul>
                 </div>
             </div>
