@@ -242,7 +242,7 @@ img{
   justify-content: center;
   align-items: center;
   padding: .3rem;
-  background: rgba(6,156,84,.5);
+  background: gray;
   border-radius: .4rem;
   z-index: var(--z-tooltip);
   transition: .4s;
@@ -326,7 +326,7 @@ img{
   background-color: rgb(88, 88, 88);
 }
 
-#myBtn, #myBtn1, #myBtn2:hover{
+#myBtn, #myBtn1, #myBtn2, #myBtn3:hover{
   cursor: pointer;
 }
 
@@ -345,7 +345,7 @@ img{
 }
 
 /*========== SERVICES ==========*/
-#more, #more1, #more2{
+#more, #more1, #more2, #more3{
   display: none;
 }
 
@@ -490,7 +490,7 @@ img{
   text-align: center;
   row-gap: 3rem;
   align-content: center;
-  /* margin-top: -2rem; */
+  margin-top: 2rem;
 }
 
 .contact__description{
