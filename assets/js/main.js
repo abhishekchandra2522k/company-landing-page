@@ -243,3 +243,17 @@ $(document).ready(function(){
         ]
     })
 });
+
+// document.getElementById("myBTN").addEventListener("click", function(){ 
+//     var newWindowContent = document.getElementById('myContent').innerHTML;
+//     var newWindow = window.open("", "", "width=500,height=400");
+//     newWindow.document.write(newWindowContent);
+// });
+
+document.getElementById('popup').addEventListener('click',function(){
+    document.querySelector('.bg-modal').style.display = 'flex';
+});
+
+document.querySelector('.close').addEventListener('click', function(){
+    document.querySelector('.bg-modal').style.display = 'none';
+});
