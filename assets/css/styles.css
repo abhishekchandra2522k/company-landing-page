@@ -326,7 +326,7 @@ img{
   background-color: rgb(88, 88, 88);
 }
 
-#myBtn, #myBtn1, #myBtn2, #myBtn3:hover{
+#myBtn, #myBtn1, #myBtn2, #myBtn3, #myBtn4, #myBtn5:hover{
   cursor: pointer;
 }
 
@@ -345,7 +345,7 @@ img{
 }
 
 /*========== SERVICES ==========*/
-#more, #more1, #more2, #more3{
+#more, #more1, #more2, #more3, #more4, #more5{
   display: none;
 }
 
