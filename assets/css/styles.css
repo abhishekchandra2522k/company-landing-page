@@ -186,7 +186,7 @@ img{
 }
 
 .bx-menu{
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 .nav__item{
@@ -326,7 +326,7 @@ img{
   background-color: rgb(88, 88, 88);
 }
 
-#myBtn, #myBtn1, #myBtn2, #myBtn3, #myBtn4, #myBtn5:hover{
+#myBtn, #myBtn1, #myBtn2, #myBtn3, #myBtn4, #myBtn5, #myBtn6, #myBtn7:hover{
   cursor: pointer;
 }
 
@@ -345,7 +345,7 @@ img{
 }
 
 /*========== SERVICES ==========*/
-#more, #more1, #more2, #more3, #more4, #more5{
+#more, #more1, #more2, #more3, #more4, #more5, #more6, #more7{
   display: none;
 }
 
@@ -744,6 +744,12 @@ select{
   .contact__form{
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 600px){
+  .newimg{
+    width: 60px;
   }
 }
 
