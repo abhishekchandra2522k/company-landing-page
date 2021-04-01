@@ -460,6 +460,7 @@ img{
 
 .slide:hover img{
   filter: grayscale(0);
+  transition: 1s ease;
 }
 .slide:hover{
   background: #000000;
@@ -471,12 +472,12 @@ img{
   width: 100%;
 }
 
-.img__img:hover{
+/* .img__img:hover{
   transform: scale(1.1);
   transition: 0.5s;
-}
+} */
 
-.image__overlay{
+/* .image__overlay{
   position: absolute;
   top: 0;
   left: 0;
@@ -492,15 +493,15 @@ img{
   opacity: 0;
   transition: opacity 0.5s;
   filter: grayscale(100%);
-}
+} */
 
-.image__overlay:hover{
+/* .image__overlay:hover{
   opacity: 1;
-}
+} */
 
-.image__title{
+/* .image__title{
   font-size: 2em;
-}
+} */
 
 
 
