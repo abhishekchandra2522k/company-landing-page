@@ -495,14 +495,6 @@ img{
 
 
 /*========== CONTACT ==========*/
-/* .contact__container{
-  text-align: center;
-  row-gap: 3rem;
-  align-content: center;
-  margin-top: 2rem;
-  width: 50%;
-} */
-
 .contact__description{
   margin-bottom: var(--mb-3);
 }
