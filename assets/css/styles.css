@@ -375,6 +375,16 @@ img{
   justify-self: center;
 }
 
+.about__center div {
+    display: inline-block;
+    display: -moz-inline-box;
+    *display: inline; /* For IE7 */
+    zoom: 1; /* Trigger hasLayout */
+    width: 33%;
+    text-align: center;
+}
+
+
 /*========== SERVICES ==========*/
 #more, #more1, #more2, #more3, #more4, #more5, #more6, #more7{
   display: none;
