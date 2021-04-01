@@ -325,19 +325,19 @@ img{
   }
 
   33%{
-    background: linear-gradient(rgba(236, 204, 204, 0.233),rgba(255, 133, 63, 0.336));
+    background: linear-gradient(rgba(245, 212, 212, 0.541),rgba(255, 63, 63, 0.76));
     -webkit-background-clip: text;
     /* opacity: 0.8; */
   }
 
   66%{
-    background: linear-gradient(rgb(250, 245, 245),rgb(0, 255, 255));
+    background: linear-gradient(rgb(182, 235, 85),rgb(0, 255, 255));
     -webkit-background-clip: text;
     /* opacity: 0.6; */
   }
 
   100% {
-      background: linear-gradient(#ffffff69, #888dd669);
+      background: linear-gradient(#3e53c969, #3441f0a8);
       -webkit-background-clip: text;
       opacity: 0.4;
   }
