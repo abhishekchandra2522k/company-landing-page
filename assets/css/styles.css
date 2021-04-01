@@ -161,7 +161,6 @@ img{
 
 /*========== NAV ==========*/
 .nav{
-  /* max-width: 1024px; */
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
@@ -321,24 +320,26 @@ img{
 @keyframes effect1 {
   0% {
       background: linear-gradient(
-              #b39d9d, #00ff00);
+              #ffffff, #00ff00);
       -webkit-background-clip: text;
   }
 
   33%{
-    background: linear-gradient(rgb(105, 92, 92),rgb(0, 0, 0));
+    background: linear-gradient(rgba(236, 204, 204, 0.233),rgba(255, 133, 63, 0.336));
     -webkit-background-clip: text;
+    /* opacity: 0.8; */
   }
 
   66%{
-    background: linear-gradient(rgb(245, 98, 98),rgb(255, 0, 0));
+    background: linear-gradient(rgb(250, 245, 245),rgb(0, 255, 255));
     -webkit-background-clip: text;
+    /* opacity: 0.6; */
   }
-  
+
   100% {
-      background: linear-gradient(
-              #d0c7fa, #0011ff);
+      background: linear-gradient(#ffffff69, #888dd669);
       -webkit-background-clip: text;
+      opacity: 0.4;
   }
 }
 
@@ -494,13 +495,13 @@ img{
 
 
 /*========== CONTACT ==========*/
-.contact__container{
+/* .contact__container{
   text-align: center;
   row-gap: 3rem;
   align-content: center;
   margin-top: 2rem;
-  /* width: 50%; */
-}
+  width: 50%;
+} */
 
 .contact__description{
   margin-bottom: var(--mb-3);
@@ -553,49 +554,20 @@ select{
   margin-bottom: var(--mb-1);
 }
 
+.address{
+  color: gray;
+}
+
+.address:hover{
+  color: white;
+}
+
 @media screen and (min-width: 1024px){
   .contact__container1{
     margin-left: 29rem;
   }
 }
 
-
-.bg-modal{
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  top: 4500px;
-  display: flex;
-  justify-content: center; /* horizontally */
-  align-items: center; /* vertically */
-  border-radius: 2px;
-  display: none;
-  z-index: 3;
-}
-
-.modal-content{
-  width: 650px;
-  height: 800px;
-  background-color: rgb(0, 0, 0);
-  text-align: center;
-  position: relative;
-  border-radius: 0rem;
-  transition: 0.5s ease;
-}
-
-#popup:clicked{
-  transition: 0.5s ease;
-}
-
-.close{
-  position: absolute;
-  top: 5rem;
-  left: 2rem;
-  font-size: 42px;
-  transform: rotate(45deg);
-  cursor: pointer;
-}
 /*========== FOOTER ==========*/
 .footer__container{
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -619,6 +591,10 @@ select{
   font-size: 1.5rem;
   color: var(--title-color);
   margin-right: var(--mb-2);
+}
+
+.footer__social:hover{
+  color: gray;
 }
 
 .footer__title{
@@ -646,34 +622,21 @@ select{
 
 /*========== MEDIA QUERIES ==========*/
 @media screen and (min-width: 1000px){
-  .home__container,
-  /* .about__container, */
-  .app__container{
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
-  }
-
-  /* .about__data, .about__initial, */
-  /* .app__data, .app__initial, */
   .contact__container1, .contact__initial{
     text-align: center;
-    margin-left: 35rem;
-    margin-right: 35rem;
-  }
-  
-
-  .about__img, .app__img{
-    width: 380px;
-    order: -1;
+    margin-left: 28rem;
+    margin-right: 28rem;
   }
 
-  .contact__container{
-    align-items: center;
-  }
   .contact__button{
     justify-self: center;
   }
 
+  .contact__grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
 }
 @media screen and (max-width: 68px){
   .contact__container1, .contact__initial{
@@ -728,23 +691,6 @@ select{
     width: 130px;
     pointer-events: none;
   }
-
-  .app__store{
-    margin: 0 var(--mb-1) 0 0;
-  }
-
-
-  .contact__inputs{
-    column-gap: 1.5rem;
-  }
-  .contact__inputs1{
-  width: 50%;
-  text-align: center;
-  margin-left: 11rem;
-  margin-top: 1rem;
-  padding-top: 5rem;
-  row-gap: 0rem;
-}
   .contact__info{
     padding-left: 3rem;
   }
@@ -757,8 +703,7 @@ select{
     width: 500px;
   }
 
-  .about__container,
-  .app__container{
+  .about__container{
     column-gap: 0rem;
   }
 
@@ -777,12 +722,6 @@ select{
   .contact__form{
     margin-left: 1rem;
     margin-right: 1rem;
-  }
-}
-
-@media screen and (min-width: 100px) and (max-width: 600px){
-  .newimg{
-    width: 60px;
   }
 }
 

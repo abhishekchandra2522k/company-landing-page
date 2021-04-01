@@ -61,11 +61,11 @@
                     <div class="about__data">
                         <!-- <span class="section-subtitle about__initial">About us</span> -->
                         <h2 class="section-title about__initial">SMALL AND BIG DIGITAL BUSINESS <span class="changeclr">SOLUTIONS</span></h2>
-                        <p class="about__description" style="font-family: 'Poppins', sans-serif;"> Established in 2020, Unsocials is a new age Marketing Agency, headquartered in Jaipur, Rajasthan.<br>
+                        <p class="about__description" style="font-family: 'Poppins', sans-serif; font-size: 20px;"> Established in 2020, Unsocials is a new age Marketing Agency, headquartered in Jaipur, Rajasthan.<br>
  Unsocials, despite being new, has worked with pan India customers from various business verticals. <br>
   Unsocials sits pretty amidst the cultural gem of India which mirrors our creative work as well.<br><br>
 
-<b style="color: gray;">THE TEAM</b><br>
+<b style="color: gray; font-size: 23px;">THE TEAM</b><br>
      As a full-service digital marketing agency, we provide content creation, social media, web design, internet marketing, SEO, social media, <br>
      Design communication, Analytics and more to businesses large and small <br>
      that are looking to broadcast their messages more efficiently as per their target audience. <br><br>
@@ -75,8 +75,8 @@
     
     As we grow, we are committed to the vision that founded our guiding force and success <br><br>
 
-            <b style="color: lightgray;">&nbsp;&nbsp;&emsp;&emsp;&emsp;CREATIVE OUTPUT &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;FUTURISTIC THINKING            &emsp;&emsp;&emsp;     HIGHEST QUALITY STANDARD <br><br>
-CUSTOMIZED SOLUTIONS       &emsp;&emsp;&emsp;&emsp;               PERSONALIZED ATTENTION       &emsp;&emsp;&emsp;       ROI FOCUSED STRATEGY</b><br><br>
+            <b>&emsp;&emsp;&emsp;CREATIVE OUTPUT &emsp;&emsp;&emsp;&emsp;     HIGHEST QUALITY STANDARD      &emsp;&emsp;&emsp;   PERSONALIZED ATTENTION <br><br>
+                &emsp;&emsp;FUTURISTIC THINKING       &nbsp;&emsp;&emsp;&emsp;               CUSTOMIZED SOLUTIONS       &emsp;&emsp;&emsp;&emsp;&nbsp;     ROI FOCUSED STRATEGY</b><br><br>
 
 Contact us to get started on your a new age solution for your projects with us.
                         </p>
@@ -87,7 +87,7 @@ Contact us to get started on your a new age solution for your projects with us.
             <!--========== SERVICES ==========-->
             <section class="services section" id="services">
                 <!-- <span class="section-subtitle">Offering</span> -->
-                <h2 class="section-title" style="text-transform: uppercase;">Fuel the Growth of your Business with <span class="changeclr">our Services</span></h2>
+                <h2 class="section-title" style="text-transform: uppercase;">Fuel the Growth of your Business with our Services</h2>
 
                 <div class="services__container  bd-grid">
                     <div class="services__content">
@@ -312,64 +312,48 @@ Contact us to get started on your a new age solution for your projects with us.
             <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
             <script src="https://maxcdn.bootstrap.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-            <!--========== CONTACT US ==========-->
-            <!-- <section class="contact section bd-container" id="contact">
-                <div class="contact__container bd-grid">
-                    <div class="contact__data">
-                        <span class="section-subtitle contact__initial">Let's talk</span>
-                        <h2 class="section-title contact__initial">Contact us</h2>
-                        <p class="contact__description">If you want a great presence of your company on social media, contact us and we will attend you quickly, with our 24/7 chat service.</p>
-                    </div>
-
-                    <div class="contact__button">
-                        <a href="#contact-form" class="button">Contact us now</a>
-                    </div>
-                </div>
-            </section> -->
-
             <!-- ===== CONTACT FORM =====--> 
             <section class="contact section" id="contact-form">
                 <h2 class="section-title" style="text-transform: uppercase;">Let us Help you!</h2>
-                <span class="section-subtitle">If you’ve got a requirement you’d like to discuss, or if you simply want to know more about how we work, get in touch.</span>
-                <span class="section-subtitle">Digital Requirements</span><br><br>
+                <span class="section-subtitle">If you’ve got a requirement you’d like to discuss, or if you simply want to know more about how we work, get in touch.</span><br>
+                <span class="section-subtitle" style="color: gray;">Digital Requirements</span><br><br>
 
                 <div class="contact__container1 bd-grid">
                     <form action="mailto:info@beunsocials.social" method="post" enctype="text/plain" class="contact__form">
-                        <div class="contact__inputs">
+                        <div class="contact__inputs contact__grid">
                             <input type="text" placeholder="Name*" name="Name" class="contact__input" required>
                             <input type="text" placeholder="Mobile*" name="Mobile" class="contact__input" required>
-                        </div>
-                        <div class="contact__inputs">
                             <input type="mail" placeholder="Email*" name="E-mail" class="contact__input" required>
                             <input type="text" placeholder="Company*" class="contact__input" name="Company" required>
                             <input type="text" placeholder="Location*" class="contact__input" name="Location" required>
+                            <select name="Requirement" id="requirement" class="contact__input" aria-placeholder="requirement" required>
+                                <option value="none">Select Requirement Type</option>
+                                <option value="Social Media Marketing">Social Media Marketing</option>
+                                <option value="SEO">SEO</option>
+                                <option value="Mobile Search">Mobile Search</option>
+                                <option value="UI / UX">UI / UX</option>
+                                
+                                
+                                <option value="Web Development">Web Development</option>
+                                <option value="Ecommerce Solution">Ecommerce Solution</option>
+                                <option value="Media Solution">Media Solution</option>
+                                
+                                <option value="Digital Content">Digital Content</option>
+                                <option value="Online Reputation Management">Online Reputation Management</option>
+                                <option value="Others">Any other</option>
+                            </select>
+                            <select name="Budget" id="budget" class="contact__input" required>
+                                <option value="none">Current Annual Digital Budget(INR)*</option>
+                                <option value="Upto 1Cr">Upto 5L</option>
+                                <option value="1-3Cr">5-8L</option>
+                                <option value="3-5Cr">8-10L</option>
+                                <option value="5-10Cr">10-15L</option>
+                                <option value="10Cr+">15 L+</option>
+                            </select>
+                            <input name="Message" id="" cols="0" rows="10" placeholder="Describe your Requirement.." class="contact__input message" required> 
                         </div>
-                        <select name="Requirement" id="requirement" class="contact__input" aria-placeholder="requirement" required>
-                            <option value="none">Select Requirement Type</option>
-                            <option value="Social Media Marketing">Social Media Marketing</option>
-                            <option value="SEO">SEO</option>
-                            <option value="Mobile Search">Mobile Search</option>
-                            <option value="UI / UX">UI / UX</option>
-                            
-                            
-                            <option value="Web Development">Web Development</option>
-                            <option value="Ecommerce Solution">Ecommerce Solution</option>
-                            <option value="Media Solution">Media Solution</option>
-                            
-                            <option value="Digital Content">Digital Content</option>
-                            <option value="Online Reputation Management">Online Reputation Management</option>
-                            <option value="Others">Any other</option>
-                        </select>
-                        <select name="Budget" id="budget" class="contact__input" required>
-                            <option value="none">Current Annual Digital Budget(INR)*</option>
-                            <option value="Upto 1Cr">Upto 5L</option>
-                            <option value="1-3Cr">5-8L</option>
-                            <option value="3-5Cr">8-10L</option>
-                            <option value="5-10Cr">10-15L</option>
-                            <option value="10Cr+">15 L+</option>
-                        </select>
-                        <input name="Message" id="" cols="0" rows="10" placeholder="Describe your Requirement.." class="contact__input message" required> 
-                        <input type="submit" value="Send" class="button contact__button">
+                        <br>
+                        <input type="submit" value="Send" class="button contact__button">&emsp;
                         <input type="reset" value="Reset" class="button contact__button">
                     </form>
                 </div>
@@ -399,9 +383,9 @@ Contact us to get started on your a new age solution for your projects with us.
                         <li>G-6, JC Heights, Ajmer Road</li>
                         <li>Jagdamba Nagar, Jaipur</li>
                         <li>Rajasthan, 302024</li>
-                        <li><i class='bx bxs-map' style="color: gray;"></i> <a href="https://goo.gl/maps/MyWoSLCzoe2nXmUY9" target="_blank" style="color: gray;">Get Directions</a></li>
-                        <li><a href="tel:+917627031394" style="color: gray;"><i class='bx bxs-phone' ></i> +91 7627031394</a></li>
-                        <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@beunsocials.social" style="color: gray;"><i class='bx bx-mail-send'></i> info@beunsocials.social</a></li>
+                        <li><a href="https://goo.gl/maps/MyWoSLCzoe2nXmUY9" target="_blank" class="address"><i class='bx bxs-map'></i> Get Directions</a></li>
+                        <li><a href="tel:+917627031394" class="address"><i class='bx bxs-phone' ></i> +91 7627031394</a></li>
+                        <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@beunsocials.social" class="address" target="_blank"><i class='bx bx-mail-send'></i> info@beunsocials.social</a></li>
                     </ul>
                 </div>
 
