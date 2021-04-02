@@ -301,11 +301,11 @@ img{
   }
   18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
     color: #FFF;
-    box-shadow: 0 0 10px #03bcf4,
-                0 0 20px #03bcf4,
-                0 0 40px #03bcf4,
-                0 0 80px #03bcf4,
-                0 0 160px #03bcf4,
+    box-shadow: 0 0 10px gray,
+                0 0 20px gray,
+                0 0 40px gray,
+                0 0 80px gray,
+                0 0 160px gray,
                 ;
   }
 }
