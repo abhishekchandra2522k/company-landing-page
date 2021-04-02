@@ -357,7 +357,7 @@ img{
   background-color: rgb(88, 88, 88);
 }
 
-#myBtn, #myBtn1, #myBtn2, #myBtn3, #myBtn4, #myBtn5, #myBtn6, #myBtn7:hover{
+#myBtn, #myBtn1, #myBtn2, #myBtn3, #myBtn4, #myBtn5, #myBtn6, #myBtn7, #myBtn8, #myBtn9, #myBtn10, #myBtn11, #myBtn12:hover{
   cursor: pointer;
 }
 
@@ -386,7 +386,7 @@ img{
 
 
 /*========== SERVICES ==========*/
-#more, #more1, #more2, #more3, #more4, #more5, #more6, #more7{
+#more, #more1, #more2, #more3, #more4, #more5, #more6, #more7, #more8, #more9, #more10, #more11, #more12{
   display: none;
 }
 
@@ -718,6 +718,11 @@ select{
     padding-left: 4rem;
     padding-right: 6rem;
     column-gap: 10rem;
+  }
+
+  .services__content1{
+    padding-left: 29rem;
+    padding-right: 29rem;
   }
 }
 
