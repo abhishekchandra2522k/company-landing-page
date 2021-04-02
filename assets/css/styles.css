@@ -277,6 +277,7 @@ img{
   align-items: center;
   min-height: 100vh;
   /* top: -1; */
+  margin-top: -12rem;
 }
 
 .home__content{
