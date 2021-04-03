@@ -159,6 +159,24 @@ img{
   background-color: var(--body-color);
 }
 
+/* === Scroll Bar ==== */
+::-webkit-scrollbar{
+  width: 3px;
+}
+::-webkit-scrollbar-track{
+  background: gray;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: black;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-track-piece:vertical:end{
+  background: rgb(0, 0, 0);
+}
+
 /*========== NAV ==========*/
 .nav{
   height: var(--header-height);
@@ -224,15 +242,15 @@ img{
 
 /* Active menu */
 .active-link{
-  color: var(--first-color);
+  color: gray;
 }
 
-/* Change background header */
+/* ======Change background header =======*/
 .scroll-header{
   box-shadow: 0 2px 4px rgba(0,0,0,.1);
 }
 
-/* Scroll top */
+/* =======Scroll top ====== */
 .scrolltop{
   position: fixed;
   right: 1rem;
@@ -275,12 +293,8 @@ img{
   width: 100%;
   pointer-events: none;
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 960px){
 .home2{
-  /* background-position: right, left;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 3rem;
   position: relative;
   background: black;
   z-index: 1;
@@ -289,28 +303,22 @@ img{
   align-items: center;
   min-height: 30vh;
   top: -1; 
-  margin-top: -12rem;
-  margin-left: 2rem;
-  margin-right: 0rem; */
-  display: none;
 }
 
-/* .home__content{
+.home__content{
   position: relative;
   font-size: 2.5em;
   font-weight: 900;
   z-index: 1;
-  color: #082229;
+  color: gray;
   overflow: hidden;
-  width: 100%;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
   line-height: 0.75em;
   outline: none;
   animation: animate 4s linear infinite;
-  margin-top: -10rem;
-} */
+}
 
-/* @keyframes animate{
+@keyframes animate{
   0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
     color: #082027;
     text-shadow: none;
@@ -324,7 +332,12 @@ img{
                 0 0 160px gray,
                 ;
   }
-}*/
+}
+
+.contact__form{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
 }
 /* .home__content::before{
   content: '';
@@ -646,19 +659,15 @@ select{
   color: var(--first-color-dark);
   margin-bottom: var(--mb-1);
 }
-
+.submit{
+  text-align: center;
+}
 .address{
   color: gray;
 }
 
 .address:hover{
   color: white;
-}
-
-@media screen and (min-width: 1024px){
-  .contact__container1{
-    margin-left: 29rem;
-  }
 }
 
 /*========== FOOTER ==========*/
@@ -717,8 +726,17 @@ select{
 @media screen and (min-width: 1000px){
   .contact__container1, .contact__initial{
     text-align: center;
-    margin-left: 28rem;
-    margin-right: 28rem;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+  }
+  .contact__container2, .contact__initial{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
   }
 
   .contact__button{
@@ -834,7 +852,7 @@ select{
     font-size: 7em;
     font-weight: 900;
     z-index: 1;
-    color: #082229;
+    color: gray;
     overflow: hidden;
     /* width: 100%; */
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
@@ -845,16 +863,16 @@ select{
   
   @keyframes animate{
     0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
-      color: #082027;
+      color: rgb(99, 99, 99);
       text-shadow: none;
     }
     18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
       color: #FFF;
-      box-shadow: 0 0 10px #03bcf4,
-                  0 0 20px #03bcf4,
-                  0 0 40px #03bcf4,
-                  0 0 80px #03bcf4,
-                  0 0 160px #03bcf4,
+      box-shadow: 0 0 10px rgb(99, 99, 99),
+                  0 0 20px rgb(95, 95, 95),
+                  0 0 40px rgb(68, 68, 68),
+                  0 0 80px rgb(73, 73, 73),
+                  0 0 160px rgb(77, 76, 76),
                   ;
     }
   }
