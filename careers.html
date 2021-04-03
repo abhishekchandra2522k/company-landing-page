@@ -47,14 +47,12 @@
                         </p>
                 </div>
 
-                <div class="contact__container contact__container1 bd-grid">
+                <div class="contact__container2 bd-grid">
                     <form action="mailto:hr@unsocials.social" method="post" enctype="text/plain" class="contact__form">
-                        <div class="contact__inputs">
+                        <div class="contact__inputs contact__grid">
                             <input type="text" placeholder="Name*" name="Name" class="contact__input" required>
                             <input type="mail" placeholder="Email*" name="E-mail" class="contact__input" required>
-                        </div>
-                        <div class="contact__inputs">
-                            <input type="text" placeholder="Contact Number*" name="Mobile" class="contact__input" required>
+                            <input type="number" placeholder="Contact Number*" name="Mobile" class="contact__input" required>
                             <select name="Requirement" id="requirement" class="contact__input" aria-placeholder="requirement" required>
                                 <option value="none">Position</option>
                                 <option value="Social Media Manager">Social Media Manager</option>
@@ -66,21 +64,30 @@
                                 <option value="Video Editor">Video Editor</option>
                                 <option value="Content Writer">Content Writer</option>
                             </select>
-                            <input type="text" placeholder="Current CTC*" class="contact__input" name="CCTC" required>
-                            <input type="text" placeholder="Expected CTC*" class="contact__input" name="ECTC" required>
-                            <input type="text" placeholder="Notice Period" class="contact__input" name="Notice Period" required>
-                        </div>
-        
-                        <input name="Message" id="" cols="0" rows="10" placeholder="You got to know us from" class="contact__input message" required> 
-                        <input name="Message" id="" cols="0" rows="10" placeholder="Why do you want to work with us?" class="contact__input message" required> 
-                        <input type="submit" value="Apply Now" class="button contact__button">
-                        <input type="reset" value="Reset" class="button contact__button">
+                            <input type="number" placeholder="Current CTC*" class="contact__input" name="CCTC" required>
+                            <input type="number" placeholder="Expected CTC*" class="contact__input" name="ECTC" required>
+                            <input type="number" placeholder="Notice Period" class="contact__input" name="Notice Period" required>
+                            <input name="You got to know us from" id="" cols="0" rows="10" placeholder="You got to know us from" class="contact__input message" required>
+                        </div>  
+                            <input name="Why" id="" cols="0" rows="10" placeholder="Why do you want to work with us?" class="contact__input message" required>   
+                            <div class="submit">
+                                <input type="submit" value="Apply Now" class="button contact__button">
+                                <input type="reset" value="Reset" class="button contact__button">
+                            </div>
                     </form>
+                    <br><br>
                     <p class="contact__description section-subtitle">Can't find your openings? <br> Drop your resume at <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hr@unsocials.social" style="color: gray;" target="_blank">hr@unsocials.social</a>
                     </p>
 
                 </div>
             </div>
+        </section>
+
+        <section class="home2" id="home">
+            <h2 class="home__content">
+                <span>U N</span> S O C I A L S <br>
+            </h2>
+            <br><br>
         </section>
     </main>
     <!--========== FOOTER ==========-->
