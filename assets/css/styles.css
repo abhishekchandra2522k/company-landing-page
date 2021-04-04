@@ -195,7 +195,7 @@ img{
     padding: 1.5rem 0 1rem;
     text-align: center;
     background-color: var(--body-color);
-    transition: .4s;
+    transition: 0.2s;
     box-shadow: 0 4px 4px rgba(0,0,0,.1);
     border-radius: 0 0 1rem 1rem;
     z-index: var(--z-fixed);
@@ -223,7 +223,7 @@ img{
 }
 
 .nav__link{
-  transition: .3s;
+  transition: .2s;
 }
 
 .nav__link:hover{
@@ -262,7 +262,7 @@ img{
   background: gray;
   border-radius: .4rem;
   z-index: var(--z-tooltip);
-  transition: .4s;
+  transition: .2s;
   visibility: hidden;
 }
 
@@ -355,7 +355,7 @@ img{
   color: #FFF;
   padding: .75rem 1rem;
   border-radius: .5rem;
-  transition: .3s;
+  transition: .2s;
 }
 
 .button:hover{
@@ -464,7 +464,7 @@ img{
 
 .slide1:hover img{
   filter: grayscale(0);
-  transition: 0.5s;
+  transition: 0.2s ease;
 }
 
 .slide{
@@ -478,11 +478,11 @@ img{
 
 .slide:hover img{
   filter: grayscale(0);
-  transition: 1s ease;
+  transition: 0.4s ease;
 }
 .slide:hover{
   background: #000000;
-  transition: 0.5s;
+  transition: 0.2s ease;
 }
 
 .img__img{
