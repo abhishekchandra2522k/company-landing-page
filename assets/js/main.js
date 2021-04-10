@@ -387,3 +387,10 @@ $(document).ready(function(){
         ]
     })
 });
+
+var preloader = document.getElementById('loading')
+var header = document.getElementById('header')
+function myLoad(){
+  preloader.style.display = 'none';
+  header.style.position = 'fixed';
+}
