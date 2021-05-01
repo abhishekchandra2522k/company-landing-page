@@ -558,6 +558,44 @@ select{
   color: white;
 }
 
+#status{
+  width: 40%;
+  max-width: 450px;
+  text-align: center;
+  padding: 10px;
+  /* background-color: #006994; */
+  border-radius: 8px;
+}
+
+#status.success{
+  background-color: rgb(255, 255, 255);
+  color: #000;
+  font-weight: bold;
+  animation: status 4s ease forwards;
+}
+#status.error{
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  font-weight: bold;
+  animation: status 3s ease forwards;
+}
+
+@keyframes status{
+  0%{
+      opacity: 1;
+      pointer-events: all;
+  }
+  90%{
+      opacity: 1;
+      pointer-events: all;
+  }
+  100%{
+      opacity: 0;
+      pointer-events: none;
+  }
+}
+
+
 /*========== FOOTER ==========*/
 .footer__container{
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
