@@ -601,6 +601,18 @@ select{
 }
 
 
+@media screen and (max-width: 536px){
+  #status{
+    margin-left: 154px !important;
+  }
+}
+@media screen and (min-width: 1500px){
+  #status{
+    margin-left: 217px;
+  }
+}
+
+
 /*========== FOOTER ==========*/
 .footer__container{
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -848,10 +860,4 @@ select{
     .home__container {
         height: 640px;
     }
-}
-
-@media screen and (min-width: 1500px){
-  #status{
-    margin-left: 217px;
-  }
 }
