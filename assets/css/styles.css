@@ -354,6 +354,10 @@ img{
   margin-left: 2rem;
   margin-right: 2rem;
 }
+
+#status{
+  margin-left: 160px !important;
+}
 }
 /*========== BUTTONS ==========*/
 .button{
@@ -565,6 +569,7 @@ select{
   padding: 10px;
   /* background-color: #006994; */
   border-radius: 8px;
+  margin-left: 209px;
 }
 
 #status.success{
@@ -843,4 +848,10 @@ select{
     .home__container {
         height: 640px;
     }
+}
+
+@media screen and (min-width: 1500px){
+  #status{
+    margin-left: 217px;
+  }
 }
