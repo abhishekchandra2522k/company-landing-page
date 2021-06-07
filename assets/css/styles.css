@@ -1,6 +1,12 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
@@ -62,26 +68,9 @@ html{
   scroll-behavior: smooth;
 }
 
-/*========== Variables Dark theme ==========*/
-body.dark-theme{
-  --title-color: #ffffff;
-  --text-color: #ffffff;
-  --body-color: #000000;
-  --container-color: #ffffff;
-}
-
 /*========== Button Dark/Light ==========*/
-.change-theme{
-  position: absolute;
-  right: 1rem;
-  top: 1.8rem;
-  color: var(--text-color);
-  font-size: 1rem;
-  cursor: pointer;
-}
-
 body{
-  margin: var(--header-height) 0 0 0;
+  /* margin: var(--header-height) 0 0 0; */
   font-family: var(--body-font);
   font-size: 1.1rem;
   background-color: var(--body-color);
@@ -159,7 +148,7 @@ img{
 
 .l-header{
   width: 100%;
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
@@ -612,7 +601,6 @@ select{
   }
 }
 
-
 /*========== FOOTER ==========*/
 .footer__container{
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -835,14 +823,14 @@ select{
   }
   .services__img img{
     border-color: #000000;
-  border-style: none;
+    border-style: none;
   }
   
   .services__img:hover{
     transition: 0.2s ease;
     filter: grayscale(0%);
     border-color: #000000;
-  border-style: none;
+    border-style: none;
   }
   
 }
@@ -860,4 +848,205 @@ select{
     .home__container {
         height: 640px;
     }
+}
+
+/* === Testimonials === */
+
+.testimonials{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+}
+
+.testimonials p{
+  color: #000;
+}
+
+.heading{
+  font-size: large;
+  margin-bottom: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.c1{
+  padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.cd{
+  width: 18rem;
+  backface-visibility: hidden;
+  cursor: pointer;
+}
+.card-text-wrapper{
+  padding: 1rem 1rem;
+  background-color: #fafafa;
+  border-radius: 8px;
+  font-size: 15px;
+  box-shadow: 0 0 1rem rgba(0,0,0,0.2);
+  display: flex;
+  position: relative;
+  gap: 5px;
+}
+.card-text-wrapper::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 8.5rem;
+  background-color: inherit;
+  width: 1rem;
+  height: 1rem;
+  transform: translateY(50%) rotate(45deg);
+}
+.card-text-wrapper i{
+  font-size: 2em;
+  transform: translateY(-5px);
+  color: #000;
+}
+
+figure{
+  padding: 1rem;
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.card__user-pic{
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 1rem rgba(0,0,0,0.2);
+}
+
+.card__user-pic img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1{
+  color: #fff;
+}
+
+.card__name{
+  display: block;
+  font-size: 1em;
+  letter-spacing: 2px;
+  margin-bottom: 2px;
+}
+
+.card__prof{
+  display: block;
+  font-size: 0.6em;
+  font-weight: 400;
+}
+
+.flex-t{
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 960px){
+.cd1{
+  margin-left: 0rem;
+}
+.ctw2{
+  width: 370px; 
+  margin-right: -2rem;
+}
+.cd2{
+  margin-left: -10rem;
+}
+.ctw3{
+  width: 450px; 
+  margin-right: -2rem
+}
+.c1{
+  gap: 6rem;
+}
+.ctw2::after{
+  left: 11rem;
+}
+.fig2{
+  margin-right: -3rem;
+}
+.ctw3::after{
+  left:15rem;
+}
+.fig3{
+  margin-right: -10rem;
+}
+.fig1{
+  margin-right: -5rem;
+}
+.ctw1{
+  margin-right: -5rem; 
+  padding-bottom: 4rem;
+  margin-left: 0rem;
+}
+.ctw1::after{
+  left:11.5rem;
+}
+}
+@media screen and (min-width: 1440px){
+.cd1{
+  margin-left: 0rem;
+}
+.ctw2{
+  width: 370px; 
+  margin-right: 2rem;
+}
+.cd2{
+  margin-left: -2rem;
+}
+.ctw3{
+  width: 510px; 
+  margin-right: -2rem
+}
+.c1{
+  gap: 10rem;
+  margin-left: -3rem;
+}
+.ctw2::after{
+  left: 11rem;
+}
+.fig2{
+  margin-right: -3rem;
+}
+.ctw3::after{
+  left:15rem;
+}
+.fig3{
+  margin-right: -13rem;
+}
+.fig1{
+  margin-right: -5rem;
+}
+.ctw1{
+  margin-right: -5rem; 
+  padding-bottom: 4rem;
+  margin-left: 0;
+}
+}
+
+@media screen and (max-width: 1440px){
+  .nav__link{
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1440px){
+  .schedule{
+    margin-right: 4.5rem;
+  }
 }
