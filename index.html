@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
         <link rel="icon" href="assets/img/logo.PNG">
         <!--========== CSS ==========-->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.js"> -->
@@ -27,7 +29,7 @@
         <header class="l-header" id="header">
             <nav class="nav">
                 <p class="nav__logo"><strong style="-webkit-text-fill-color: white;">+91 7627031394 &nbsp;|<a href="https://www.facebook.com/unsocials.social" class="nav__logo"><i class='bx bxl-facebook'></i></a>
-                    <a href="https://www.instagram.com/unsocials.social/" class="nav__logo"><i class='bx bxl-instagram'></i></a> <a href="https://www.linkedin.com/company/unsocials-social/" class="nav__logo"><i class='bx bxl-linkedin'></i></a> | &nbsp; <a href="/" style="color: gray;"><img src="assets/img/logo1.PNG" style="width: 90px;" class="newimg" alt=""></a></strong></p>
+                    <a href="https://www.instagram.com/unsocials.social/" class="nav__logo"><i class='bx bxl-instagram'></i></a> <a href="https://www.linkedin.com/company/unsocials-social/" class="nav__logo"><i class='bx bxl-linkedin'></i></a> | &nbsp; <a href="/" style="color: gray;"><img src="assets/img/logo1.PNG" class="newimg" alt="unsocial"></a></strong></p>
                 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
@@ -329,7 +331,24 @@ Contact us to get started on your a new age solution for your projects with us.
             <!-- <script src="https://maxcdn.bootstrap.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
 
             <!-- SMM -->
-
+            <section class="smm">
+                <div class="smm_text">
+                    <p>social media management</p>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide" style="background-image:url(/assets/img/najuk.JPG)"></div>
+                      <div class="swiper-slide" style="background-image:url(/assets/img/hotel.JPG)"></div>
+                      <div class="swiper-slide" style="background-image:url(/assets/img/rasa.JPG)"></div>
+                      <div class="swiper-slide" style="background-image:url(/assets/img/collection.JPG)"></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper-pagination-white"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                </div>
+            </section>
             <!-- ===== CONTACT FORM =====--> 
             <section class="contact section" id="contact-form">
                 <h2 class="section-title" style="text-transform: uppercase;">Let us Help you!</h2>
@@ -466,6 +485,44 @@ Contact us to get started on your a new age solution for your projects with us.
                     });
                 });
             }
+            });
+        </script>
+
+        <!-- Swiper -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            // direction: 'vertical',
+            loop: true,
+            effect: 'cube',
+            speed: 800,
+            autoplay: true,
+            grabCursor: true,
+            cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            // scrollbar: {
+            //     el: '.swiper-scrollbar',
+            // },
             });
         </script>
     </body>
