@@ -1034,6 +1034,7 @@ h1{
 }
 .c1{
   gap: 6rem;
+  transform: scale(0.9);
 }
 .ctw2::after{
   left: 11rem;
@@ -1075,7 +1076,7 @@ h1{
   margin-right: -2rem
 }
 .c1{
-  gap: 10rem;
+  /* gap: 10rem; */
   margin-left: -3rem;
 }
 .ctw2::after{
@@ -1147,7 +1148,7 @@ h1{
   width: 720px;
   height: 640px;
   top: 13rem;
-  left: -10rem
+  left: -10rem;
 }
 
 .swiper-slide {
@@ -1185,6 +1186,9 @@ h1{
   .newimg{
     width: 90px;
   }
+  .swiper-smm{
+    margin-top: 4rem;
+  }
 }
 @media screen and (min-width:1000px){
   .swiper-container {
@@ -1211,10 +1215,72 @@ h1{
     top: 11rem;
     left: -10rem
   }
+  .swiper-smm{
+    margin-top: 12rem;
+  }
   .newimg{
     width: 160px;
   }
 }
+
+@media screen and (min-width: 500px) {
+  .swiper-container{
+    width: 400px;
+    height: 311px;
+    top: 11rem;
+    left: -10rem
+  }
+  .smm_text p{
+    font-size: 37px;
+    top: 6rem;
+  }
+  .smm{
+    height: 50vh;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .swiper-container{
+    width: 526px;
+    height: 466px;
+    top: 8rem;
+    left: -10rem
+  }
+  .swiper-smm{
+    margin-top: 5rem;
+  }
+  .smm_text p{
+    font-size: 60px;
+    top: 11rem;
+  }
+  .smm{
+    height: 90vh;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .swiper-container{
+    width: 920px;
+    height: 811px;
+    top: 8rem;
+    left: -10rem
+  }
+  .swiper-smm{
+    margin-top: 5rem;
+  }
+  .smm_text p{
+    font-size: 80px;
+    top: 18rem;
+  }
+  .smm{
+    height: 90vh;
+  }
+  .c1{
+    gap: 11rem;
+  }
+}
+
+
 
 .newimg{
   width: 90px;
